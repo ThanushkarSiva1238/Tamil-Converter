@@ -1,0 +1,220 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    appearance: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+html,
+body {
+    user-select: none;
+    background: #EAEFEF;
+    font-family: "poppins";
+    width: 100%;
+    text-align: center;
+    padding: .5rem 0;
+    color: #25343F;
+}
+
+marquee{
+    background-color: #FF9B51;
+    color: #25343F;
+    margin-top: 15px;
+    padding: 5px 0;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+main{
+    margin-top: .5rem;
+    display: flex;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+}
+.container h3{
+    font-size: 20px;
+    text-align: left;
+    color: #25343F;
+}
+.container textarea{
+    width: 100%;
+    height: 350px;
+    font-size: 16px;
+    border: 2px solid #25343F;
+    border-radius: 10px;
+    padding: 10px 15px;
+    resize: none;
+    background-color: #BFC9D1;
+    color: #25343F;
+}
+textarea::placeholder {
+    color: #25343F;
+    opacity: 0.7;
+}
+textarea:focus {
+    border-color: #FF9B51;
+    box-shadow: 0 0 0 2px rgba(255, 155, 81, 0.4);
+}
+
+.container button{
+    font-family: "poppins", sans-serif;
+    margin-top: 10px;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    background-color: #FF9B51;
+    color: #25343F;
+    border: 2px solid #25343F;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
+button:hover {
+    background: #ff8a33;
+}
+button:active {
+    transform: scale(0.96);
+}
+button .bx{
+    font-weight: 800;
+    font-size: 18px;
+}
+
+.unicode textarea{
+    font-family: 'Nirmala UI', sans-serif;
+}
+.bamini textarea{
+    font-family: 'Bamini', sans-serif;
+}
+
+footer{
+    margin-top: 20px;
+    padding: 10px 20px;
+    border-top: 2px solid #25343F;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    color: #25343F;
+}
+footer p{
+    font-size: 17px;
+    font-weight: 600;
+}
+footer a{
+    color: #FF9B51;
+    transition: all 0.2s ease;
+}
+footer span a{
+    font-size: 24px;
+    margin: 0 5px;
+    border: 3px solid #FF9B51;
+    width: 40px;
+    height: 40px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;    
+}
+footer a:hover{
+    color: #ff8a33;
+}
+footer span a:hover{
+    border-color: #25343F;
+    color: #25343F;
+    background-color: #FF9B51;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    main {
+        gap: 10px;
+        padding: 0 10px;
+        flex-direction: column;
+    }
+
+    .container textarea {
+        height: 250px;
+        font-size: 14px;
+    }
+
+    .container h3 {
+        font-size: 16px;
+    }
+
+    .container button {
+        font-size: 14px;
+        padding: 6px 10px;
+    }
+
+    footer p {
+        font-size: 15px;
+    }
+
+    footer span a {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+    main {
+        flex-direction: column;
+        gap: 8px;
+        padding: 0 5px;
+    }
+
+    .container textarea {
+        height: 200px;
+        font-size: 13px;
+    }
+
+    .container h3 {
+        font-size: 15px;
+    }
+
+    .container button {
+        font-size: 13px;
+        padding: 5px 8px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+    footer span a {
+        width: 28px;
+        height: 28px;
+        font-size: 16px;
+    }
+
+    marquee {
+        font-size: 14px;
+        padding: 4px 0;
+    }
+}
+/* End of Style */
