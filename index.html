@@ -28,7 +28,7 @@
         <div class="container bamini">
             <h3>Bamini Output</h3>
             <textarea id="baminiOutput" class="bamini" readonly></textarea>
-            <button onclick="copyBamini()"><i class='bx bx-copy'></i> COPY</button>
+            <button onclick="copyBamini()" id="copyButton"><i class='bx bx-copy'></i> COPY</button>
         </div>
     </main>
 
@@ -208,7 +208,7 @@
 
             output.setAttribute("readonly", true);
 
-            alert("Bamini text copied!");
+            document.getElementById("copyButton").innerHTML = "<i class='bx bx-clipboard-check'></i> COPIED";
         }
     </script>
 </body>
